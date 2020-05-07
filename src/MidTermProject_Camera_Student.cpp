@@ -111,14 +111,14 @@ int main(int argc, const char *argv[])
             
         }
         // For mean and std deviation of the keypoint neighborhoods 
-        double mean = std::accumulate(keypoints.size.begin(), keypoints.size.end(), 0.0)/keypoints.size();
+        /*double mean = std::accumulate(keypoints.size.begin(), keypoints.size.end(), 0.0)/keypoints.size();
         auto add_square = [mean](double sum, int i)
         {
             auto d = i - mean;
             return sum + d*d;
         };
         double total = std::accumulate(keypoints.size.begin(), keypoints.size.end(), 0.0, add_square);
-        double variance = total / keypoints.size();
+        double variance = total / keypoints.size();*/
 
         // optional : limit number of keypoints (helpful for debugging and learning)
         bool bLimitKpts = false;
